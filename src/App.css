@@ -1,0 +1,246 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1,
+h2,
+h3 {
+    color: #444;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 1000px;
+    border-radius: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.order-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.post-detail-container {
+    border: 5px solid black;
+    width: 1000px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.post-detail-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Page Styles */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    font-size: 60px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 3px solid black;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+button:nth-child(2) {
+    background-color: red;
+    color: black;
+}
+
+button:last-child {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Post List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 500px;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+li h3 {
+    margin: 0 0 10px;
+}
+
+li p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+li a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Post Details Page */
+img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.post-actions button {
+    margin-right: 10px;
+    background-color: #6c757d;
+    color: white;
+}
+
+.post-actions button:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    li {
+        margin: 10px 15px;
+    }
+
+    form {
+        margin: 10px 15px;
+    }
+}
